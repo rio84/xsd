@@ -3,16 +3,14 @@
     <!-- 我们掌握着改变世界的力量
     XML是美丽的计算机语言
     -->
-    <xs:element name="list">
+    <xs:element name="banner">
         <xs:complexType>
             <xs:choice>
                 <xs:element name="i" minOccurs="1">
                     <xs:complexType>
                         <xs:all>
-                            <xs:element name="img" type="xs:anyURI"/>
-                            <xs:element name="href" type="xs:anyURI"/>
-                            <xs:element name="title" type="xs:string" />
-                            <xs:element name="desc" type="xs:string" />
+                            <xs:element name="text" type="xs:anyURI"/>
+                            <xs:element name="id" type="xs:string"/>
                             <!-- -->
                         </xs:all>
                     </xs:complexType>
