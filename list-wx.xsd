@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <!-- 我们掌握着改变世界的力量
+    XML是美丽的计算机语言
+    -->
+    <xs:element name="list-wx">
+        <xs:complexType>
+            <xs:choice>
+                <xs:element name="i" minOccurs="1">
+                    <xs:complexType>
+                        <xs:all>
+                            <xs:element name="img" type="xs:anyURI"/>
+                            <xs:element name="href" type="xs:anyURI"/>
+                            <xs:element name="title" type="xs:string"/>
+                            <xs:element name="desc" type="xs:string"/>
+                            <xs:element name="time" type="xs:string"/>
+                            <xs:element name="status" type="xs:string"/>
+                            <xs:element name="is-new" type="xs:boolean" />
+
+                            <!-- -->
+                        </xs:all>
+                    </xs:complexType>
+                </xs:element>
+            </xs:choice>
+
+        </xs:complexType>
+    </xs:element>
+
+
+</xs:schema>
