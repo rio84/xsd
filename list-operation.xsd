@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <!-- 我们掌握着改变世界的力量
+    XML是美丽的计算机语言
+    -->
+    <xs:element name="list-news"><!-- 无限下拉 -->
+        <xs:complexType>
+            <xs:choice>
+                <xs:element name="list">
+                    <xs:complexType>
+                        <xs:all>
+                            <!--
+                            是不是搞个外链引用会更佳 - NB!
+                            -->
+                            <xs:element name="i" minOccurs="1">
+                                <xs:complexType>
+                                    <xs:all>
+                                        <xs:element name="id" type="xs:string"/>
+                                        <xs:element name="img" type="xs:anyURI" comment="main img"/>
+                                        <xs:element name="href" type="xs:anyURI"/>
+                                        <xs:element name="title" type="xs:string"/>
+                                        <xs:element name="time" type="xs:string"/>
+
+                                        <!-- eg. comment count-->
+                                        <xs:element name="counter" type="xs:integer"/>
+                                        <xs:element name="icon" type="xs:anyURI"/>
+                                        <xs:element name="type" type="xs:integer"/>
+                                        <!-- -->
+                                    </xs:all>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:all>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="operations">
+                    <xs:complexType>
+                        <xs:choice>
+                            <xs:element name="more" type="xs:anyURI" />
+                        </xs:choice>
+                    </xs:complexType>
+                </xs:element>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>
