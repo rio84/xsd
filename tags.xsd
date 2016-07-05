@@ -3,7 +3,7 @@
     <!-- 我们掌握着改变世界的力量
     XML是美丽的计算机语言
     -->
-    <xs:element name="banner">
+    <xs:element name="tags">
         <xs:complexType>
             <xs:choice>
                 <xs:element name="i" minOccurs="1">

@@ -11,6 +11,9 @@
                         <xs:all>
                             <!--
                             是不是搞个外链引用会更佳 - NB!
+                            有那种先定义个 complexType name=xxx,
+                            然后在element attribute中设置type='xxx'
+                            可读性、可复用性更强，
                             -->
                             <xs:element name="i" minOccurs="1">
                                 <xs:complexType>
