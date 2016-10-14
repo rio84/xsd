@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <!-- 我们掌握着改变世界的力量
+    XML是美丽的计算机语言
+    -->
+    <xs:element name="stock-subscribe-list">
+        <xs:complexType>
+            <xs:choice>
+                <xs:element name="i" minOccurs="1">
+                    <xs:complexType>
+                        <xs:all>
+                            <xs:element name="email" type="xs:string"/>
+                            <xs:element name="symbol" type="xs:string"/>
+                            <xs:element name="cost" type="xs:decimal"/>
+                            <xs:element name="amount" type="xs:integer"/>
+                            <xs:element name="lte" type="xs:decimal"/>
+                            <xs:element name="gte" type="xs:decimal"/>
+                            <xs:element name="id" type="xs:integer"/>
+                            <xs:element name="now" type="xs:decimal"/>
+                            <xs:element name="percent" type="xs:decimal"/>
+                            <xs:element name="updateTime" type="xs:dateTime"/>
+                            <!-- -->
+                        </xs:all>
+                    </xs:complexType>
+                </xs:element>
+            </xs:choice>
+
+        </xs:complexType>
+    </xs:element>
+
+
+</xs:schema>
